@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>www.holsterr.com</title>
+</head>
+<body>
+    <!-- mobile navbar -->
+    <div class="responsive-navbar">
+    
+         <img id="close-menu-icon" onClick="closeMenu()" src="exit-icon.svg" alt="close icon">
+
+          <ul class="nav-links">
+          <li ><a href="#">Plans</a></li>
+            <li><a href="#">Find Domain</a></li>
+            <li><a href="#">Why Holsterr</a></li>
+              <li id="sign-in"><a href="#">sign in</a></li>
+            <li id="waitlist"><a href="#">Join Waitlist</a></li>
+
+     </ul>
+    </div>
+    <div id="page-cont">
+    
+    <div id="page" class="page-header">
+      
+      <!-- desktop navbar -->
+    <div id="navigation-bar" class="nav-bar">
+        <img id="yeye-icon" onClick="onMenuClick()" class="menu-icon" src="menu-icon.svg" alt="menu icon">
+        <section id="logo-cont">
+            <img id="logo" src="./Assets/Logo.svg" alt="image of logo">
+            <article id="hiring"><a href="#">Holsterr is hiring!</a></article>
+        </section>
+
+            <ul class="middle-links">
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Find Domain</a></li>
+            <li><a href="#">Why Holsterr</a></li>
+          </ul>
+
+        <ul class="join">
+            <li><a href="">sign in</a></li>
+            <li id="waitlist"><a href="">Join Waitlist</a></li>
+        </ul>   
+    </div>
+    <section class="logo-show">
+            <img id="logo" src="./Assets/Logo.svg" alt="image of logo">
+            <article id="hiring"><a href="#">Holsterr is hiring!</a></article>
+        </section>
+     <a onClick="onMenuClick()" id="menu-icon-id" class="menu-icon"><img id="yeye-icon"src="menu-icon.svg" alt="menu icon"></a>
+</div>
+ <div id="main">
+    <div class="about">
+        <h1>Host your website in less than 5 minutes.</h1>
+        <p>With holsterr, get your website up and running in less than 5 minutes with the most competitive pricing packages available online.
+        </p>
+        <span id="inputs">
+        <input type="text" placeholder="Enter e-mail address">
+        <button type="button">Join Waitlist</button>
+    </span>
+        <span id="no-spam"><img id="waitlist-img" src="./Assets/Checkmark.svg">No spam ever. Unsubscribe anytime.</span>
+    </div>
+        
+    <div class="image-section">
+        <img class="stacked-img" id="img-4" src="./Assets/Blue Shape.svg" alt="blue shape">
+        <img class="stacked-img"  id="img-3" src="./Assets/Pink Shape.svg" alt="pink shape">
+        <img class="stacked-img" id="img-2" src="./Assets/Purple Shape.svg" alt="purple shape">
+        <embed class="stacked-img" id="img-1" src="./Assets/Black Shape.svg" alt="image shape">
+    </div>
+</div>
+</div>
+
+<div class="footer-div">
+<footer>
+    <ul class="sm-links">
+        <li id="facebook"><a href="#">Facebook</a></li>
+        <li id="insta"><a href="#">Instagram</a></li>
+        <li id="twitter"><a href="#">Twitter</a></li>
+    </ul>
+    <ul class="help">
+        <li><img id="avatar" src="./Assets/Help Avatar.svg" alt="picture of specialist"></li>
+            <li><p>Have any questions?<br>
+            <a href="#">Talk to a specialist</a></p></li>
+    </ul>
+</footer>
+</div>
+
+
+
+<script type="text/javascript">
+    var body = document.body;
+    var sidebar = document.querySelector('.responsive-navbar');
+    var menu_icon = document.getElementById('#yeye-icon');
+
+
+          function onMenuClick(){
+            if (innerWidth<= 768){
+          sidebar.style.width = '100%';
+      }else if(innerWidth >= 768 && innerWidth <= 1282)
+        {sidebar.style.width = '70%';
+        sidebar.style.overflow = 'scroll';
+      }
+      
+          body.style.transition = '0.8s';
+          body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+         }
+
+         function closeMenu(){
+            sidebar.style.width = '0';
+              body.style.backgroundColor = 'rgb(246, 249, 189)';
+              body.style.transition = '0.8s';
+              sidebar.style.overflow = 'hidden';
+
+
+         }
+
+</script>
+</body>
+</html>
+
+
