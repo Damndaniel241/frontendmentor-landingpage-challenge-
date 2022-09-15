@@ -100,9 +100,8 @@
           sidebar.style.width = '100%';
       }else if(innerWidth >= 768 && innerWidth <= 1282)
         {sidebar.style.width = '70%';
-        sidebar.style.overflow = 'scroll';
       }
-      
+          sidebar.style.overflowY = 'scroll';
           body.style.transition = '0.8s';
           body.style.backgroundColor = 'rgba(0,0,0,0.4)';
          }
@@ -111,7 +110,7 @@
             sidebar.style.width = '0';
               body.style.backgroundColor = 'rgb(246, 249, 189)';
               body.style.transition = '0.8s';
-              sidebar.style.overflow = 'hidden';
+              sidebar.style.overflowY = 'hidden';
 
 
          }
